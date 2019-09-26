@@ -8,14 +8,14 @@ class Author
     @@all << self
   end
   
-  def add_post(song)
+  def add_post(post)
   ##  @songs << song
-    song.artist = self 
+    post.author = self 
   end 
   
-  def add_song_by_name(name)
-    song = Song.new(name)
-    add_song(song)
+  def add_post_by_title(title)
+    post = Post.new(title)
+    add_post(post)
   end
   
   def self.all 

@@ -1,5 +1,5 @@
 class Author 
-  attr_accessor :title
+  attr_accessor :title, :name
   
   @@all = []
   
